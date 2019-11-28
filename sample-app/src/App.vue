@@ -1,9 +1,9 @@
 <template>
-  <v-app>
+  <v-app dark>
     <v-toolbar app>
       <v-toolbar-side-icon v-on:click="openSideMenu"></v-toolbar-side-icon>
-      <v-toolbar-title class="headline text-uppercase">
-        <span>マイリスト</span>
+      <v-toolbar-title>
+        <span>My List</span>
       </v-toolbar-title>
       <v-spacer></v-spacer>
     </v-toolbar>
