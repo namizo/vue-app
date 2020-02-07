@@ -86,7 +86,7 @@ export default {
           amount: '1840',
           people: '1-5',
           remark: '',
-          play: '未'
+          play: '済'
         },
         {
           name: 'ごきぶりポーカー',

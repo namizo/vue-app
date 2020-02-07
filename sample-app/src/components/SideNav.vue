@@ -1,5 +1,5 @@
-  
 <template>
+<!--テンプレートから$storeでストアにアクセスできる。stateは$store.stateで参照できる-->
     <v-navigation-drawer v-model="$store.state.drawer" absolute temporary>
       <v-list class="pa-1">
         <v-list-tile>
@@ -32,7 +32,9 @@ export default {
 
       items: [
         { title: 'ホーム', icon: 'home', link: {name: 'home'}},
-        { title: 'ボードゲームリスト', icon: 'list', link: {name: 'boardgamelist'}}
+        { title: 'ボードゲームリスト', icon: 'list', link: {name: 'boardgamelist'}},
+        { title: 'このサイトについて', icon: 'info', link: {name: 'about'}},
+        { title: 'キャプチャページ', icon: 'widgets', link: {name: 'capture-page'}}
       ]
     }
   }

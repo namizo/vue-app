@@ -12,7 +12,7 @@
           <v-card-title primary-title>
             <div>
               <h3 class="headline mb-0">Vuex</h3>
-              <div style="white-space:pre-wrap; word-wrap:break-word;"> {{ card_text }} </div>
+              <div style="white-space:pre-wrap;"> {{ card_text }} </div>
             </div>
           </v-card-title>
   

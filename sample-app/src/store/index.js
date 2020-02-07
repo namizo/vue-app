@@ -8,15 +8,19 @@ export default new Vuex.Store({
     drawer: false
   },
   mutations: {
-    toggleSideMenu(state){
-      state.drawer = !state.drawer
+    // commitでtoggleSideMenuが呼び出されたときにこのmutationが呼ばれる
+    toggleSideMenu(state) {
+      // mutationのメソッドには自動でstateが渡ってくる
+      state.drawer = !state.drawer;
     }
   },
+  //コンポーネントのインターフェース
   actions: {
-    toggleSideMenu({ commit }){
-      commit('toggleSideMenu')
+    // アクションメソッドの引数には、自動的にcontextオブジェクトが渡ってくる。これはcontext.commitメソッドのみを受け取る書き方
+    // コンポーネントからactionのメソッド（toggleSideMenu）を呼び出す
+    toggleSideMenu({ commit }) {
+      commit("toggleSideMenu"); //commitメソッドはmutationのメソッドを呼び出すために使用されるもの
     }
   },
-  modules: {
-  }
-})
+  modules: {}
+});
